@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Web Dev Project</title>
+</head>
+<body>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-md position-fixed container-fluid sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand">JAJ</a>
+        <button class="navbar-toggler d-flex d-md-none order-3 p-2" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
+            <label for="toggle-menu" type="button" class="toggle-btn">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+        </button>
+        <div class="collapse navbar-collapse">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link active" aria-current="page" href="#prof">About Us</a>
+            <a class="nav-link active" aria-current="page" href="#carousel">Gallery</a>
+            <a class="nav-link active" aria-current="page" href="#per">Activities</a>
+            <a class="nav-link active" aria-current="page" href="#contactus">Contact us</a>
+        </div>
+    </div>
+</nav>
+
+<!--Offcanvas-->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="offcanvas">
+    <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="mt-2">
+            <a class="nav-link active" aria-current="page" href="#home"><i class="fas fa-home"></i>Home</a>
+            <a class="nav-link active" aria-current="page" href="#prof">About Us</a>
+            <a class="nav-link active" aria-current="page" href="#carousel"><i class="fa-solid fa-image"></i>Gallery</a>
+            <a class="nav-link active" aria-current="page" href="#per"><i class="fa-solid fa-users"></i>Activities</a>
+            <a class="nav-link active" aria-current="page" href="#contactus"><i class="fa-solid fa-message"></i>Contact Us</a>
+        </div>
+    </div>
+</div>
+  <!-- BG PIC -->
+  <div class="masthead" id="home" style="background-image: url('./img/bg.jpg');">
+    <div class="color-overlay d-flex justify-content-center align-items-center">
+      <h1>JAJ</h1>
+    </div>
+  </div>
+  <!-- cards profile -->
+  <h1 class="text-center" id="prof">ABOUT US</h1>
+  <div class="profle-area pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="bg"><img src="img/bg.jpg"></div>
+            <div class="img2"><img src="img/joshua.jpg"></div>
+            <div class="main-text">
+              <h2 class="text-center">Joshua D. Garcia Jr.</h2>
+              <p class="text-center">
+                Age: 19
+              <br>Birtday: June 30, 2003
+              <br>Address: Lower sun-ok, Ibabao Cordova, Cebu
+              <br>Phone #: 09277700788
+              </p>
+            </div>
+            <div class="socials">
+              <i class="fa fa-facebook"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="bg"><img src="img/bg.jpg"></div>
+            <div class="img2"><img src="img/angilo.jpg"></div>
+            <div class="main-text">
+              <h2 class="text-center">Angilo prince Inoc</h2>
+              <p class="text-center">
+                Age: 19
+              <br>Birtday: June 13, 2004
+              <br>Address: Lower sun-ok, Ibabao Cordova, Cebu
+              <br>Phone #: 09277700788
+              </p>
+            </div>
+            <div class="socials">
+              <i class="fa fa-facebook"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="bg"><img src="img/bg.jpg"></div>
+            <div class="img2"><img src="img/jehoram.jpg"></div>
+            <div class="main-text">
+              <h2 class="text-center">Jehoram Opalong</h2>
+              <p class="text-center">
+                Age: 20
+              <br>Birtday: May 30, 2003
+              <br>Address: San Miguel, Cordova, Cebu
+              <br>Phone #: 09094693043
+              </p>
+            </div>
+            <div class="socials">
+              <i class="fa fa-facebook"></a></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- gallery/carousel -->
+  <div id="carousel" class="carousel slide pt-5" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <h1 class="text-center" id="gal">GALLERY</h1>
+    <br>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/joshua.jpg" class="mx-auto d-block josh">
+      </div>
+      <div class="carousel-item">
+        <img src="img/angilo.jpg" class="mx-auto d-block gilo">
+      </div>
+      <div class="carousel-item">
+        <img src="img/jehoram.jpg" class="mx-auto d-block ram">
+      </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- activities -->
+  <h1 class="per text-center" id="per">ACTIVTIES</h1>
+    <p class="d-flex justify-content-center">
+      <a href="#demo" data-bs-toggle="collapse" class="btn btn-primary">Periodic Table</a>
+    </p>
+      <div id="demo" class="collapse">
+        <h1 id="ToE">Table of Elements</h1>
+        <table>
+          <tr>
+              <td class="Reactive-nonmetals">1<h1>H</h1>Hydrogen</td>
+              <td id="empt" colspan="17"></td>
+              <td class="Noble-gases">2<h1>He</h1>Helium</td>
+          </tr>
+          <tr>
+              <td class="Alkali-metals">3<h1>Li</h1>Lithium</td>
+              <td class="Alkaline-earth-metals">4<h1>Be</h1>Beryllium</td>
+              <td id="empt" colspan="11"></td>
+              <td class="Metalloids">5<h1>B</h1>Boron</td>
+              <td class="Reactive-nonmetals">6<h1>C</h1>Carbon</td>
+              <td class="Reactive-nonmetals">7<h1>N</h1>Nitrogen</td>
+              <td class="Reactive-nonmetals">8<h1>O</h1>Oxygen</td>
+              <td class="Reactive-nonmetals">9<h1>F</h1>Fluorine</td>
+              <td class="Noble-gases">10<h1>Ne</h1>Neon</td>
+          </tr>
+          <tr>
+              <td class="Alkali-metals">11<h1>Na</h1>Sodium</td>
+              <td class="Alkaline-earth-metals">12<h1>Mg</h1>Magnesium</td>
+              <td id="empt" colspan="11"></td>
+              <td class="Post-transition-metals">13<h1>Al</h1>Aluminum</td>
+              <td class="Metalloids">14<h1>Si</h1>Silicon</td>
+              <td class="Reactive-nonmetals">15<h1>P</h1>Phosphorus</td>
+              <td class="Reactive-nonmetals">16<h1>S</h1>Sulfur</td>
+              <td class="Reactive-nonmetals">17<h1>Cl</h1>Chlorine</td>
+              <td class="Noble-gases">18<h1>Ar</h1>Argon</td>
+          </tr>
+          <tr>
+              <td class="Alkali-metals">19<h1>K</h1>Potasium</td>
+              <td class="Alkaline-earth-metals">20<h1>Ca</h1>Calcium</td>
+              <td class="Transition-metals">21<h1>Sc</h1>Scandium</td>
+              <td id="empt"></td>
+              <td class="Transition-metals">22<h1>Ti</h1>Titanium</td>
+              <td class="Transition-metals">23<h1>V</h1>Vanadium</td>
+              <td class="Transition-metals">24<h1>Cr</h1>Chromium</td>
+              <td class="Transition-metals">25<h1>Mn</h1>Manganese</td>
+              <td class="Transition-metals">26<h1>Fe</h1>Iron</td>
+              <td class="Transition-metals">27<h1>Co</h1>Cobalt</td>
+              <td class="Transition-metals">28<h1>Ni</h1>Nickle</td>
+              <td class="Transition-metals">29<h1>Cu</h1>Copper</td>
+              <td class="Transition-metals">30<h1>Zn</h1>Zinc</td>
+              <td class="Post-transition-metals">31<h1>Ga</h1>Gallium</td>
+              <td class="Metalloids">32<h1>Ge</h1>Germanium</td>
+              <td class="Metalloids">33<h1>As</h1>Arsenic</td>
+              <td class="Reactive-nonmetals">34<h1>Se</h1>Selenium</td>
+              <td class="Reactive-nonmetals">35<h1>Br</h1>Bromine</td>
+              <td class="Noble-gases">36<h1>Kr</h1>Krypton</td>
+          </tr>
+          <tr>
+              <td class="Alkali-metals">37<h1>Rb</h1>Rubidium</td>
+              <td class="Alkaline-earth-metals">38<h1>Sr</h1>Strontium</td>
+              <td class="Transition-metals">39<h1>Y</h1>Yttrium</td>
+              <td id="empt"></td>
+              <td class="Transition-metals">40<h1>Zr</h1>Zirconium</td>
+              <td class="Transition-metals">41<h1>Nb</h1>Niobium</td>
+              <td class="Transition-metals">42<h1>Mo</h1>Molybdenum</td>
+              <td class="Transition-metals">43<h1>Tc</h1>Technetium</td>
+              <td class="Transition-metals">44<h1>Ru</h1>Ruthenium</td>
+              <td class="Transition-metals">45<h1>Rh</h1>Rhodium</td>
+              <td class="Transition-metals">46<h1>Pd</h1>Palladium</td>
+              <td class="Transition-metals">47<h1>Ag</h1>Silver</td>
+              <td class="Transition-metals">48<h1>Cd</h1>Cadmium</td>
+              <td class="Post-transition-metals">49<h1>In</h1>Indium</td>
+              <td class="Post-transition-metals">50<h1>Sn</h1>Tin</td>
+              <td class="Metalloids">51<h1>Sb</h1>Antimony</td>
+              <td class="Metalloids">52<h1>Te</h1>Tellurium</td>
+              <td class="Reactive-nonmetals">53<h1>I</h1>Iodine</td>
+              <td class="Noble-gases">54<h1>Xe</h1>Xenon</td>
+          </tr>
+          <tr>
+              <td class="Alkali-metals">55<h1>Cs</h1>Caesium</td>
+              <td class="Alkaline-earth-metals">56<h1>Ba</h1>Barium</td>
+              <td class="Lanthanides">57<h1>La</h1>Lanthanum</td>
+              <td id="empt"></td>
+              <td class="Transition-metals">72<h1>Hf</h1>Hafnium</td>
+              <td class="Transition-metals">73<h1>Ta</h1>Tantalum</td>
+              <td class="Transition-metals">74<h1>W</h1>Tungsten</td>
+              <td class="Transition-metals">75<h1>Re</h1>Rhenium</td>
+              <td class="Transition-metals">76<h1>Os</h1>Osmium</td>
+              <td class="Transition-metals">77<h1>Ir</h1>Iridium</td>
+              <td class="Transition-metals">78<h1>Pt</h1>Platinum</td>
+              <td class="Transition-metals">79<h1>Au</h1>Gold</td>
+              <td class="Transition-metals">80<h1>Hg</h1>Mercury</td>
+              <td class="Post-transition-metals">81<h1>Tl</h1>Thallium</td>
+              <td class="Post-transition-metals">82<h1>Pb</h1>Lead</td>
+              <td class="Post-transition-metals">83<h1>Bi</h1>Bismuth</td>
+              <td class="Post-transition-metals">84<h1>Po</h1>Polonium</td>
+              <td class="Post-transition-metals">85<h1>At</h1>Astatine</td>
+              <td class="Noble-gases">86<h1>Rn</h1>Radon</td>
+          </tr>
+          <tr>
+              <td class="Alkali-metals">87<h1>Fr</h1>Francium</td>
+              <td class="Alkaline-earth-metals">88<h1>Ra</h1>Radium</td>
+              <td class="Actinides">89<h1>Ac</h1>Actinium</td>
+              <td id="empt"></td>
+              <td class="Transition-metals">104<h1>Rf</h1>Rutherfordium</td>
+              <td class="Transition-metals">105<h1>Db</h1>Dubnium</td>
+              <td class="Transition-metals">106<h1>Sg</h1>Seaborgium</td>
+              <td class="Transition-metals">107<h1>Bh</h1>Bohrium</td>
+              <td class="Transition-metals">108<h1>Hs</h1>Hassium</td>
+              <td class="Unknown-properties">109<h1>Mt</h1>Meitnerium</td>
+              <td class="Unknown-properties">110<h1>Ds</h1>Darmstadtium</td>
+              <td class="Unknown-properties">111<h1>Rg</h1>Roentgenium</td>
+              <td class="Unknown-properties">112<h1>Cn</h1>Copernicium</td>
+              <td class="Unknown-properties">113<h1>Nh</h1>Nihonium</td>
+              <td class="Unknown-properties">114<h1>Fl</h1>Flerovium</td>
+              <td class="Unknown-properties">115<h1>Mc</h1>Moscovium</td>
+              <td class="Unknown-properties">116<h1>Lv</h1>Livermorium</td>
+              <td class="Unknown-properties">117<h1>Ts</h1>Tennessine</td>
+              <td class="Unknown-properties">118<h1>Og</h1>Oganesson</td>
+          </tr>
+          <tr>
+              <td id="empt" colspan="19"></td>
+          </tr>
+          <tr class="Lanthanides">
+              <td id="empt"></td>
+              <td id="empt"></td>
+              <td id="empt"></td>
+              <td id="empt"></td>
+              <td>58<h1>Ce</h1>Cerium</td>
+              <td>59<h1>Pr</h1>Praseodymium</td>
+              <td>60<h1>Nd</h1>Neodymium</td>
+              <td>61<h1>Pm</h1>Promethium</td>
+              <td>62<h1>Sm</h1>Samarium</td>
+              <td>63<h1>Eu</h1>Europium</td>
+              <td>64<h1>Gd</h1>Gadolinium</td>
+              <td>65<h1>Tb</h1>Terbium</td>
+              <td>66<h1>Dy</h1>Dysprosium</td>
+              <td>67<h1>Ho</h1>Holmium</td>
+              <td>68<h1>Er</h1>Erbium</td>
+              <td>69<h1>Tm</h1>Thulium</td>
+              <td>70<h1>Yb</h1>Ytterbium</td>
+              <td>71<h1>Lu</h1>Lutetium</td>
+              <td id="empt"></td>
+          </tr>
+          <tr class="Actinides">
+              <td id="empt"></td>
+              <td id="empt"></td>
+              <td id="empt"></td>
+              <td id="empt"></td>
+              <td>90<h1>Th</h1>Thorium</td>
+              <td>91<h1>Pa</h1>Protactinium</td>
+              <td>92<h1>U</h1>Uranium</td>
+              <td>93<h1>Np</h1>Neptunium</td>
+              <td>94<h1>Pu</h1>Plutonium</td>
+              <td>95<h1>Am</h1>Americium</td>
+              <td>96<h1>Cm</h1>Curium</td>
+              <td>97<h1>Bk</h1>Berkelium</td>
+              <td>98<h1>Cf</h1>Californium</td>
+              <td>99<h1>Es</h1>Einsteinium</td>
+              <td>100<h1>Fm</h1>Fermium</td>
+              <td>101<h1>Md</h1>Mendelevium</td>
+              <td>102<h1>No</h1>Nobelium</td>
+              <td>103<h1>Lr</h1>Lawrencium</td>
+              <td id="empt"></td>
+          </tr>
+      </table>
+      </div>
+      <p class="pb-5 d-flex justify-content-center">
+        <a class="btn btn-info" data-bs-toggle="collapse" href="#surveyForm" role="button" aria-expanded="false"
+            aria-controls="surveyForm">
+            Survey Form
+        </a>
+    </p>
+    <div class="collapse" id="surveyForm">
+        <div class="card card-body">
+            <div class="container d-flex justify-content-center">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Survey Form</h5>
+                        <div class="row mb-2">
+                            <div class="col">
+                                <label for="firstName" class="form-label mb-0">First Name</label>
+                                <input type="text" class="form-control" id="firstName">
+                            </div>
+                            <div class="col">
+                                <label for="lastName" class="form-label mb-0">Last Name</label>
+                                <input type="text" class="form-control" id="lastName">
+                            </div>
+                        </div>
+                        <div class="info mb-4">
+                            <label for="user" class="form-label mb-0">Email:</label>
+                            <input type="email" class="form-control mb-2" id="user"
+                                placeholder="useraddress@example.com">
+                        </div>
+                        <div class="degree mb-3">
+                            <label for="degree">Degree:</label>
+                            <select id="degree">
+                                <option class="fontstyle">--Select--</option>
+                                <option>BSIT</option>
+                                <option>BSHM</option>
+                                <option>BSEd</option>
+                            </select>
+                        </div>
+                        <div class="year mb-3">
+                            <label for="year">Year:</label>
+                            <select id="year">
+                                <option class="fontstyle">--Select--</option>
+                                <option>1st</option>
+                                <option>2nd</option>
+                                <option>3rd</option>
+                                <option>4th</option>
+                            </select>
+                        </div>
+                        <div class="section mb-3">
+                            <label for="section">Section:</label>
+                            <select id="section">
+                                <option class="fontstyle">--Select--</option>
+                                <option>A</option>
+                                <option>B</option>
+                                <option>C</option>
+                                <option>D</option>
+                            </select>
+                        </div>
+                        <div class="text-center mb-5">
+                            <h6 class="mb-0">Gender</h6>
+                            <input class="form-check-input mt-0" type="radio" name="Gender" value="" id="Male">
+                            <label class="form-check-label" for="Male">Male</label>
+                            <input class="form-check-input ms-5" type="radio" name="Gender" value="" id="Female">
+                            <label class="form-check-label" for="Female">Female</label>
+                        </div>
+                        <button class="btn btn-info" type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- CONTACT US -->
+
+<div class="container-fluid contactus small" id="contactus">
+  <h1 id="con">CONTACT US</h1>
+  <div class="container p-0 d-none d-md-block">
+      <div class="form-box">
+
+          <div class="contaier contactus-items">
+              <div class="name mb-2">
+                  <label for="name" class="form-label mb-0">Name:</label>
+                  <input type="text" class="form-control" id="name">
+              </div>
+              <div class="info mb-3">
+                  <label for="user" class="form-label mb-0">Email:</label>
+                  <input type="email" class="form-control mb-2" id="user" placeholder="useraddress@example.com">
+              </div>
+              <div class="mb-3">
+                  <label for="message">Message:</label>
+                  <textarea class="form-control" id="message" rows="5"
+                      placeholder="What is it that you want to talk about? Let us know!"></textarea>
+              </div>
+              <button class="btn form-control" type="submit">Send</button>
+          </div>
+        </div>
+      </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
